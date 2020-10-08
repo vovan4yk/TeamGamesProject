@@ -1,0 +1,2 @@
+[1004/144014.827:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1004/222843.380:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\travel\AppData\Local\Temp\scoped_dir9364_22639\Crashpad: The system cannot find the file specified. (0x2)

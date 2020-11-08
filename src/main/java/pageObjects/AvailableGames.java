@@ -6,7 +6,6 @@ public enum AvailableGames {
     PLAYED("Played"),
     FUTURE("Future");
 
-
     private String name;
 
     AvailableGames(String name){

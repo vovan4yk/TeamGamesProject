@@ -1,27 +1,25 @@
 package Tests;
 
-import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import pageObjects.HomePage;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class BaseTest {
+public class BaseTest extends BaseTestConfiguration {
 
-   public static HomePage homePage;
+    public static HomePage homePage;
 
     @BeforeTest()
-    public void initDriver(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/travel/TeamGamesProject/chromedriver.exe");
-        Configuration.timeout = 6000;
-        Configuration.browser = "chrome";
+    public HomePage login() {
+        homePage = open("/", HomePage.class);
+        Selenide.clearBrowserCookies();
+        return homePage;
     }
 
-    @BeforeTest()
-    public HomePage login(){
-        homePage =  open("http://www.it-league.lviv.ua/", HomePage.class);
-        getWebDriver().manage().window().maximize();
-        return homePage;
+    @AfterTest
+    public void closeBrowser() {
+        //close browser
     }
 }

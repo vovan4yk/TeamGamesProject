@@ -19,7 +19,7 @@ public class GamesResultsTest extends BaseTest {
                 .openGames(AvailableGames.PLAYED)
                 .getPlayedTable(45)
                 .getAllGames();
-
+  
         List<GameResultAnalyze.TeamGame> teamGames = new GameResultAnalyze()
                 .analyzeGame(gameBattleList);
 

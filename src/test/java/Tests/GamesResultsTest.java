@@ -22,7 +22,7 @@ public class GamesResultsTest extends BaseTest {
   
         List<GameResultAnalyze.TeamGame> teamGames = new GameResultAnalyze()
                 .analyzeGame(gameBattleList);
-
+ 
         GameResultAnalyze gameResultAnalyze = homePage.openTable()
                 .gettableResults();
 

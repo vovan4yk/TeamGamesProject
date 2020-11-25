@@ -1,13 +1,15 @@
 package Tests;
 
+import businessObjects.TeamGame;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
-import pageObjects.AvailableGames;
-import pageObjects.AvailableStage;
+import businessObjects.AvailableGames;
+import businessObjects.AvailableStage;
 import pageObjects.GameBattle;
-import pageObjects.GameResultAnalyze;
+import businessServices.GameResultAnalyze;
 
 import java.util.List;
+
 
 public class GamesResultsTest extends BaseTest {
 
@@ -19,13 +21,15 @@ public class GamesResultsTest extends BaseTest {
                 .openGames(AvailableGames.PLAYED)
                 .getPlayedTable(45)
                 .getAllGames();
-  
-        List<GameResultAnalyze.TeamGame> teamGames = new GameResultAnalyze()
-                .analyzeGame(gameBattleList);
- 
-        GameResultAnalyze gameResultAnalyze = homePage.openTable()
-                .gettableResults();
 
-        SoftAssertions.assertSoftly();
+        List<TeamGame> teamGamesFromCalendar = new GameResultAnalyze()
+                .analyzeGame(gameBattleList);
+
+        List<TeamGame> teamGamesFromTable = homePage.openTable()
+                .getTableResult();
+
+        SoftAssertions.assertSoftly(softly -> softly.assertThat(teamGamesFromCalendar)
+                .as("Tables are not equals")
+                .containsExactlyInAnyOrderElementsOf(teamGamesFromTable));
     }
 }

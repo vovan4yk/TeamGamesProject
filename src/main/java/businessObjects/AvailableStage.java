@@ -1,4 +1,4 @@
-package pageObjects;
+package businessObjects;
 
 public enum AvailableStage {
 
@@ -8,7 +8,7 @@ public enum AvailableStage {
 
     private String name;
 
-    AvailableStage(String name){
+    AvailableStage(String name) {
         this.name = name;
     }
 

@@ -16,7 +16,7 @@ public class GameBattle extends ElementsContainer {
     @FindBy(xpath = ".//a[@data-placement='left']")
     private SelenideElement secondTeamName;
 
-    public boolean isFirstNameExist(){
+    public boolean isFirstNameExist() {
         return firstTeamName.exists();
     }
 

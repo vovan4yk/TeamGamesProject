@@ -16,18 +16,18 @@ public class MainMenu extends ElementsContainer {
     @FindBy(xpath = ".//span[text()='Calendar']")
     private SelenideElement calendar;
 
-    MainMenu(){
+    MainMenu() {
     }
 
-    public void openCalendar(){
+    public void openCalendar() {
         openMenuTab(CALENDAR);
     }
 
-    public void openTable(){
+    public void openTable() {
         openMenuTab(TABLE);
     }
 
-    private void openMenuTab(String tabName){
-        $(By.xpath(String.format("//span[text()='%s']",tabName))).shouldBe(Condition.visible).click();
+    private void openMenuTab(String tabName) {
+        $(By.xpath(String.format("//span[text()='%s']" , tabName))).shouldBe(Condition.visible).click();
     }
 }

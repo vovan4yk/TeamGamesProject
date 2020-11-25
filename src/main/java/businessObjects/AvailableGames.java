@@ -1,4 +1,4 @@
-package pageObjects;
+package businessObjects;
 
 public enum AvailableGames {
 
@@ -8,7 +8,7 @@ public enum AvailableGames {
 
     private String name;
 
-    AvailableGames(String name){
+    AvailableGames(String name) {
         this.name = name;
     }
 

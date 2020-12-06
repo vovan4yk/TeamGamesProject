@@ -1,7 +1,7 @@
 package Tests;
 
 import businessObjects.TeamGame;
-import org.assertj.core.api.SoftAssertions;
+import businessObjects.Verification;
 import org.testng.annotations.Test;
 import businessObjects.AvailableGames;
 import businessObjects.AvailableStage;
@@ -10,11 +10,10 @@ import businessServices.GameResultAnalyze;
 
 import java.util.List;
 
-
 public class GamesResultsTest extends BaseTest {
-
     @Test()
     public void myTest() {
+
         List<GameBattle> gameBattleList = homePage.selectItLeague()
                 .openCalendar()
                 .openStage(AvailableStage.GROUP_STAGE)
@@ -28,8 +27,7 @@ public class GamesResultsTest extends BaseTest {
         List<TeamGame> teamGamesFromTable = homePage.openTable()
                 .getTableResult();
 
-        SoftAssertions.assertSoftly(softly -> softly.assertThat(teamGamesFromCalendar)
-                .as("Tables are not equals")
-                .containsExactlyInAnyOrderElementsOf(teamGamesFromTable));
+        new Verification().verifyTableAreTheSame(teamGamesFromCalendar, teamGamesFromTable);
     }
 }
+

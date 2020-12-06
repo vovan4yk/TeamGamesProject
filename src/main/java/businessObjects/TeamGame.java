@@ -28,7 +28,6 @@ public class TeamGame {
         this.gotStage = gotStage;
     }
 
-
     public String getTeam() {
         return team;
     }

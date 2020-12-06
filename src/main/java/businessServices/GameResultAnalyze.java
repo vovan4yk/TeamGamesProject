@@ -12,7 +12,7 @@ import java.util.List;
 public class GameResultAnalyze {
 
     private List<TeamGame> list = new ArrayList();
-    private final static Logger logger = Logger.getLogger(GameResultAnalyze.class);
+    private static final Logger logger = Logger.getLogger(GameResultAnalyze.class);
 
     public GameResultAnalyze() {
     }
@@ -20,13 +20,17 @@ public class GameResultAnalyze {
     public List<TeamGame> analyzeGame(List<GameBattle> gameBattleList) {
         logger.debug("Starting process getting team games results");
         gameBattleList.forEach(gameBattle -> {
+            logger.debug("Start analyzing game: " + gameBattle.toString());
             if (list.stream().noneMatch(game -> game.getTeam().equals(gameBattle.getFirstTeamName()))) {
                 list.add(new TeamGame(gameBattle.getFirstTeamName()));
+                logger.debug("New team was added with name - " + gameBattle.getFirstTeamName());
             }
             if (list.stream().noneMatch(game -> game.getTeam().equals(gameBattle.getSecondTeamName()))) {
                 list.add(new TeamGame(gameBattle.getSecondTeamName()));
+                logger.debug("New team was added with name - " + gameBattle.getSecondTeamName());
             }
 
+            logger.debug("Getting teams goals - " + gameBattle.getTeamsGoals());
             String[] goals = gameBattle.getTeamsGoals().split("-");
             int firstTeamGoals = Integer.parseInt(goals[0].trim());
             int secondTeamGoals = Integer.parseInt(goals[1].trim());
@@ -39,6 +43,7 @@ public class GameResultAnalyze {
                     .findFirst()
                     .orElseThrow(() -> new RuntimeException("Team 2 cannot be catch from list for analyzing"));
 
+            logger.debug("Adding teams results...");
             team1.setPlayedGame(team1.getPlayedGame() + 1);
             team2.setPlayedGame(team2.getPlayedGame() + 1);
             team1.setGoalsDone(team1.getGoalsDone() + firstTeamGoals);
@@ -63,6 +68,8 @@ public class GameResultAnalyze {
 
             team1.setGoalsDifference(team1.getGoalsDone() - team1.getGoalsLost());
             team2.setGoalsDifference(team2.getGoalsDone() - team2.getGoalsLost());
+
+            logger.debug("Analyzing game: " + gameBattle.toString() + " successfully finished");
         });
         logger.debug("Results got successfully");
         return list;

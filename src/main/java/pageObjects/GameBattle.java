@@ -31,4 +31,10 @@ public class GameBattle extends ElementsContainer {
     public String getSecondTeamName() {
         return secondTeamName.innerText();
     }
+
+    @Override
+    public String toString() {
+        return String.format("Team 1 - %s  %s  -  %s - Team 2" ,
+                this.getFirstTeamName(), this.getTeamsGoals(), this.getSecondTeamName());
+    }
 }

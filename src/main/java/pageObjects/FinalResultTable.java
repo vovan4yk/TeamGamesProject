@@ -19,7 +19,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class FinalResultTable extends ElementsContainer {
 
-    private final static Logger logger = Logger.getLogger(FinalResultTable.class);
+    private static final Logger logger = Logger.getLogger(FinalResultTable.class);
     private final By teamList = By.xpath(".//li[not(contains(@class,'active'))]");
 
     @FindBy(xpath = ".//div[contains(@class,'kopa-tab')]")
@@ -56,7 +56,7 @@ public class FinalResultTable extends ElementsContainer {
                 Integer.parseInt(getValueByHeader(game, DIF.getValue())),
                 Integer.parseInt(getValueByHeader(game, PTS.getValue()))
         )));
-        logger.debug("Results form table got successfully");
+        logger.debug("Results form table was got successfully");
         return games;
     }
 

@@ -14,6 +14,6 @@ public class Log {
     }
 
     public static void debug(String mess){
-        logger.debug(mess);
+        logger.info(mess);
     }
 }

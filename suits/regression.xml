@@ -9,16 +9,16 @@
         </classes>
     </test>
 
-<!--    <test name = "test2">-->
-<!--        <classes>-->
-<!--            <class name = "Tests.GamesResultsTest" />-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name = "test2">
+        <classes>
+            <class name = "Tests.GamesResultsTest" />
+        </classes>
+    </test>
 
-<!--    <test name = "test3">-->
-<!--        <classes>-->
-<!--            <class name = "Tests.GamesResultsTest" />-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name = "test3">
+        <classes>
+            <class name = "Tests.GamesResultsTest" />
+        </classes>
+    </test>
 
 </suite>

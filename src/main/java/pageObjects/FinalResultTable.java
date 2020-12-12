@@ -4,8 +4,6 @@ import businessObjects.TeamGame;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsContainer;
 import com.codeborne.selenide.SelenideElement;
-import com.google.common.collect.Table;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,10 +14,10 @@ import static businessObjects.GameResultValues.*;
 import static businessObjects.GameResultValues.PTS;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
+import static utils.Log.debug;
 
 public class FinalResultTable extends ElementsContainer {
 
-    private static final Logger logger = Logger.getLogger(FinalResultTable.class);
     private final By teamList = By.xpath(".//li[not(contains(@class,'active'))]");
 
     @FindBy(xpath = ".//div[contains(@class,'kopa-tab')]")
@@ -43,7 +41,7 @@ public class FinalResultTable extends ElementsContainer {
     }
 
     public List<TeamGame> getTableResults() {
-        logger.debug("Starting getting results form table");
+        debug("Starting getting results form table");
         List<TeamGame> games = new ArrayList<>();
 
         getTeamGamesList().forEach(game -> games.add(new TeamGame(getValueByHeader(game, TEAM.getValue()),
@@ -56,7 +54,7 @@ public class FinalResultTable extends ElementsContainer {
                 Integer.parseInt(getValueByHeader(game, DIF.getValue())),
                 Integer.parseInt(getValueByHeader(game, PTS.getValue()))
         )));
-        logger.debug("Results form table was got successfully");
+        debug("Results form table was got successfully");
         return games;
     }
 

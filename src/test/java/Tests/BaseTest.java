@@ -23,7 +23,7 @@ public class BaseTest extends BaseTestConfiguration {
 
     @BeforeTest()
     public HomePage login() {
-        homePage = open(Configuration.baseUrl, HomePage.class);
+        homePage = open("http://www.it-league.lviv.ua"/*Configuration.baseUrl*/, HomePage.class);
         debug("Home page opened");
         return homePage;
     }

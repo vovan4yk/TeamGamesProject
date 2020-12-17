@@ -9,36 +9,36 @@
         </classes>
     </test>
 
-    <test name = "test2">
-        <classes>
-            <class name = "Tests.GamesResultsTest" />  
-        </classes>
-    </test>
+<!--    <test name = "test2">-->
+<!--        <classes>-->
+<!--            <class name = "Tests.GamesResultsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name = "test3">
-        <classes>
-            <class name = "Tests.GamesResultsTest" />
-        </classes>
-    </test>
+<!--    <test name = "test3">-->
+<!--        <classes>-->
+<!--            <class name = "Tests.GamesResultsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
-    <test name = "test4">
-        <classes>
-            <class name = "Tests.GamesResultsTest" />
-        </classes>
-    </test>
+<!--    <test name = "test4">-->
+<!--        <classes>-->
+<!--            <class name = "Tests.GamesResultsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name = "test6">
-        <classes>
-            <class name = "Tests.GamesResultsTest" />
-        </classes>
-    </test>
+<!--    <test name = "test6">-->
+<!--        <classes>-->
+<!--            <class name = "Tests.GamesResultsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name = "test8">
-        <classes>
-            <class name = "Tests.GamesResultsTest" />
-        </classes>
-    </test>
+<!--    <test name = "test8">-->
+<!--        <classes>-->
+<!--            <class name = "Tests.GamesResultsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

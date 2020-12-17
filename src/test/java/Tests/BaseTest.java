@@ -23,9 +23,10 @@ public class BaseTest extends BaseTestConfiguration {
 
     @BeforeTest()
     public HomePage login() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\src\\main\\resources");
+
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
        // System.setProperty("webdriver.chrome.logfile", "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\src\\main\\resources");
-        System.setProperty("webdriver.chrome.verboseLogging",  "true");
+      //  System.setProperty("webdriver.chrome.verboseLogging",  "true");
         homePage = open("http://www.it-league.lviv.ua"/*Configuration.baseUrl*/, HomePage.class);
         debug("Home page opened");
         return homePage;

@@ -15,7 +15,7 @@ public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
         System.out.println("test");
-        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat(true).isEqualTo(true));
+        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat("true").isEqualTo(true));
 //        List<GameBattle> gameBattleList = homePage.selectItLeague()
 //                .openCalendar()
 //                .openStage(AvailableStage.GROUP_STAGE)

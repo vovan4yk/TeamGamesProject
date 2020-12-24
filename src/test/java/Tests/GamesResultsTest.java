@@ -13,7 +13,7 @@ import java.util.List;
 public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
-
+        System.out.println("test");
 //        List<GameBattle> gameBattleList = homePage.selectItLeague()
 //                .openCalendar()
 //                .openStage(AvailableStage.GROUP_STAGE)

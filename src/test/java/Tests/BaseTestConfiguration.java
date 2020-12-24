@@ -9,11 +9,11 @@ import pageObjects.FinalResultTable;
 
 public abstract class BaseTestConfiguration {
     static {
-        Configuration.timeout = 90000;
-        Configuration.browser = WebDriverRunner.CHROME;
-        Configuration.browserSize = "1366x768";
-        Configuration.pollingInterval = 200;
-        Configuration.baseUrl = "http://www.it-league.lviv.ua";
+      //  Configuration.timeout = 90000;
+//        Configuration.browser = WebDriverRunner.CHROME;
+//        Configuration.browserSize = "1366x768";
+//        Configuration.pollingInterval = 200;
+//        Configuration.baseUrl = "http://www.it-league.lviv.ua";
         PropertyConfigurator.configure("src/main/resources/log4j.properties");
     }
 }

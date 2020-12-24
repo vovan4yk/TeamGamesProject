@@ -2,6 +2,7 @@ package Tests;
 
 import businessObjects.TeamGame;
 import businessObjects.Verification;
+import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
 import businessObjects.AvailableGames;
 import businessObjects.AvailableStage;
@@ -14,6 +15,7 @@ public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
         System.out.println("test");
+        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat(1).isEqualTo(true));
 //        List<GameBattle> gameBattleList = homePage.selectItLeague()
 //                .openCalendar()
 //                .openStage(AvailableStage.GROUP_STAGE)

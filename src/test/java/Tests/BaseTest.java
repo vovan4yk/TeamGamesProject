@@ -27,7 +27,8 @@ public class BaseTest extends BaseTestConfiguration {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
        // System.setProperty("webdriver.chrome.logfile", "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\src\\main\\resources");
       //  System.setProperty("webdriver.chrome.verboseLogging",  "true");
-        homePage = open("http://www.it-league.lviv.ua"/*Configuration.baseUrl*/, HomePage.class);
+       // homePage = open("http://www.it-league.lviv.ua"/*Configuration.baseUrl*/, HomePage.class);
+        open("https://www.google.com.ua/");
         debug("Home page opened");
         return homePage;
     }

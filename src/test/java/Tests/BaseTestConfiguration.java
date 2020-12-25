@@ -9,7 +9,7 @@ import pageObjects.FinalResultTable;
 
 public abstract class BaseTestConfiguration {
     static {
-        Configuration.timeout = 9000000;
+        Configuration.timeout = 120000;
 //        Configuration.browser = WebDriverRunner.CHROME;
 //        Configuration.browserSize = "1366x768";
 //        Configuration.pollingInterval = 200;

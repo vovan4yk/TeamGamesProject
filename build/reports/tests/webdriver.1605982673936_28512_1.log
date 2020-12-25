@@ -1,0 +1,180 @@
+[1605982674.144][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 14017
+[1605982674.145][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1605982674.957][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1605982673465_28512_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1605982673465_28512_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1605982674.963][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1605982673465_28512_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1605982674.963][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1605982674.964][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\V3A35~1.POT\AppData\Local\Temp\scoped_dir25648_2080744873" data:,
+[1605982675.601][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1605982677.654][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1605982679.680][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "86.0.4240.198",
+      "chrome": {
+         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
+         "userDataDir": "C:\\Users\\V3A35~1.POT\\AppData\\Local\\Temp\\scoped_dir25648_2080744873"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51147"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b6da17d1191ca92f7369ea3fcc06c705"
+}
+[1605982679.752][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1605982679.752][INFO]: Waiting for pending navigations...
+[1605982679.754][INFO]: Done waiting for pending navigations. Status: ok
+[1605982679.877][INFO]: Waiting for pending navigations...
+[1605982679.878][INFO]: Done waiting for pending navigations. Status: ok
+[1605982679.878][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 10,
+   "y": 10
+}
+[1605982679.893][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1605982679.893][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] RESPONSE SetTimeouts
+[1605982679.909][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] COMMAND Navigate {
+   "url": "http://www.it-league.lviv.ua"
+}
+[1605982679.909][INFO]: Waiting for pending navigations...
+[1605982679.910][INFO]: Done waiting for pending navigations. Status: ok
+[1605982704.891][INFO]: Waiting for pending navigations...
+[1605982709.923][SEVERE]: Timed out receiving message from renderer: 5.018
+[1605982709.923][INFO]: Timed out. Stopping navigation...
+[1605982709.924][SEVERE]: Timed out receiving message from renderer: 5.018
+[1605982709.924][INFO]: Done waiting for pending navigations. Status: timeout: Timed out receiving message from renderer: 5.018
+[1605982709.924][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] RESPONSE Navigate ERROR timeout: Timed out receiving message from renderer: 5.018
+  (Session info: chrome=86.0.4240.198)
+[1605982710.065][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] COMMAND Quit {
+
+}
+[1605982710.135][INFO]: [b6da17d1191ca92f7369ea3fcc06c705] RESPONSE Quit

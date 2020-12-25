@@ -1,0 +1,15 @@
+Starting MSEdgeDriver 87.0.664.55 (097391c0e48fdc4ded0e5c4367f7055dc71815ed) on port 26054
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1607263061.521][SEVERE]: Timed out receiving message from renderer: 6.607
+[1607263061.522][SEVERE]: Timed out receiving message from renderer: 6.607
+[1607263109.501][SEVERE]: Timed out receiving message from renderer: 10.000
+[1607263109.502][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1607263119.505][SEVERE]: Timed out receiving message from renderer: 10.000
+[1607263129.520][SEVERE]: Timed out receiving message from renderer: 10.000
+[1607263129.520][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1607263139.526][SEVERE]: Timed out receiving message from renderer: 10.000
+[1607263149.531][SEVERE]: Timed out receiving message from renderer: 10.000
+[1607263149.531][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1607263159.540][SEVERE]: Timed out receiving message from renderer: 10.000

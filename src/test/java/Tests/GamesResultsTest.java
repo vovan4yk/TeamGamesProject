@@ -14,22 +14,22 @@ import java.util.List;
 public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
-        System.out.println("test");
-        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat("true").isEqualTo(true));
-//        List<GameBattle> gameBattleList = homePage.selectItLeague()
-//                .openCalendar()
-//                .openStage(AvailableStage.GROUP_STAGE)
-//                .openGames(AvailableGames.PLAYED)
-//                .getPlayedTable(45)
-//                .getAllGames();
-//
-//        List<TeamGame> teamGamesFromCalendar = new GameResultAnalyze()
-//                .analyzeGame(gameBattleList);
-//
-//        List<TeamGame> teamGamesFromTable = homePage.openTable()
-//                .getTableResult();
-//
-//        new Verification().verifyTableAreTheSame(teamGamesFromCalendar, teamGamesFromTable);
+//        System.out.println("test");
+//        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat("true").isEqualTo(true));
+        List<GameBattle> gameBattleList = homePage.selectItLeague()
+                .openCalendar()
+                .openStage(AvailableStage.GROUP_STAGE)
+                .openGames(AvailableGames.PLAYED)
+                .getPlayedTable(45)
+                .getAllGames();
+
+        List<TeamGame> teamGamesFromCalendar = new GameResultAnalyze()
+                .analyzeGame(gameBattleList);
+
+        List<TeamGame> teamGamesFromTable = homePage.openTable()
+                .getTableResult();
+
+        new Verification().verifyTableAreTheSame(teamGamesFromCalendar, teamGamesFromTable);
     }
 }
 

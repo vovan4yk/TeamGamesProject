@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.*;
-import static utils.Log.debug;
+import static utils.Log.getLogger;
 
 @FindBy(xpath = "//div[@class='kopa-main-col']")
 public class Calendar extends ElementsContainer {
@@ -19,7 +19,7 @@ public class Calendar extends ElementsContainer {
     private PlayedTable playedTable;
 
     public PlayedTable getPlayedTable(int expectedGames) {
-        debug("Getting played table");
+        getLogger().debug("Getting played table");
         $$(By.xpath("//div[@class='r-item']")).shouldHave(CollectionCondition.sizeGreaterThan(expectedGames));
         return page(PlayedTable.class);
     }
@@ -45,14 +45,14 @@ public class Calendar extends ElementsContainer {
     }
 
     public Calendar openStage(AvailableStage stage) {
-        debug("Selection stage");
+        getLogger().debug("Selection stage");
         stagesDropDown.shouldBe(Condition.visible).click();
         $(By.xpath(String.format(STAGE, stage.getName()))).should(Condition.visible).click();
         return this;
     }
 
     public Calendar openGames(AvailableGames games) {
-        debug("Selection games");
+        getLogger().debug("Selection games");
         PlayedDropDown.shouldBe(Condition.visible).click();
         String game = games.getName();
         $(By.xpath(String.format(GAMES, game, game))).should(Condition.visible).click();

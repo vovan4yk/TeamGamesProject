@@ -14,7 +14,7 @@ import static businessObjects.GameResultValues.*;
 import static businessObjects.GameResultValues.PTS;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static utils.Log.debug;
+import static utils.Log.getLogger;
 
 public class FinalResultTable extends ElementsContainer {
 
@@ -41,7 +41,7 @@ public class FinalResultTable extends ElementsContainer {
     }
 
     public List<TeamGame> getTableResults() {
-        debug("Starting getting results form table");
+        getLogger().debug("Starting getting results form table");
         List<TeamGame> games = new ArrayList<>();
 
         getTeamGamesList().forEach(game -> games.add(new TeamGame(getValueByHeader(game, TEAM.getValue()),
@@ -54,7 +54,7 @@ public class FinalResultTable extends ElementsContainer {
                 Integer.parseInt(getValueByHeader(game, DIF.getValue())),
                 Integer.parseInt(getValueByHeader(game, PTS.getValue()))
         )));
-        debug("Results form table was got successfully");
+        getLogger().debug("Results form table was got successfully");
         return games;
     }
 

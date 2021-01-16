@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.$;
-import static utils.Log.debug;
+import static utils.Log.getLogger;
 
 public class HomePage {
 
@@ -26,19 +26,19 @@ public class HomePage {
     }
 
     public HomePage selectItLeague() {
-        debug("Selecting league");
+        getLogger().debug("Selecting league");
         selectLeague("IT-League One 2019/2020");
         return this;
     }
 
     public Calendar openCalendar() {
-        debug("Opening calendar");
+        getLogger().debug("Opening calendar");
         mainMenu.openCalendar();
         return Selenide.page(Calendar.class).waitForDisplayed();
     }
 
     public PlayedTable openTable() {
-        debug("Opening table");
+        getLogger().debug("Opening table");
         mainMenu.openTable();
         return Selenide.page(PlayedTable.class).waitForDisplayed();
     }

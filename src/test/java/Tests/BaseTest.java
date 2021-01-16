@@ -8,7 +8,7 @@ import pageObjects.HomePage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
-import static utils.Log.debug;
+import static utils.Log.getLogger;
 import static utils.Log.intLog;
 
 public class BaseTest extends BaseTestConfiguration {
@@ -18,19 +18,13 @@ public class BaseTest extends BaseTestConfiguration {
     @BeforeSuite()
     public void initLogger() {
         intLog();
-        debug("Logger is ready for using");
+        getLogger().debug("Logger is ready for using");
     }
-
+ 
     @BeforeTest()
     public HomePage login() {
-
-      // System.setProperty("webdriver.chrome.driver",  "c:\\chrome\\chromedriver.exe");
-       // System.setProperty("webdriver.chrome.logfile", "c:\\chrome\\chromedriver.log");
-      //  System.setProperty("webdriver.chrome.verboseLogging", "true");
-        homePage = open("http://www.it-league.lviv.ua"/*Configuration.baseUrl*/, HomePage.class);
-     //  open("https://www.google.com.ua/");
-        System.out.println("test");
-        debug("Home page opened");
+        homePage = open(Configuration.baseUrl, HomePage.class);
+        getLogger().debug("Home page opened");
         return homePage;
     }
 

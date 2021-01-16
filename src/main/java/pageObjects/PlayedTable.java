@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.Selenide.$;
-import static utils.Log.debug;
+import static utils.Log.getLogger;
 
 public class PlayedTable extends ElementsContainer {
 
@@ -21,7 +21,7 @@ public class PlayedTable extends ElementsContainer {
     private List<GameBattle> gamesList;
 
     public List<GameBattle> getAllGames() {
-        debug("Getting all games");
+        getLogger().debug("Getting all games");
         return gamesList.stream()
                 .filter(GameBattle::isFirstNameExist)
                 .collect(Collectors.toList());

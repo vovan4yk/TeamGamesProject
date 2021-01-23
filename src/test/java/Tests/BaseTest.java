@@ -23,22 +23,6 @@ public class BaseTest extends BaseTestConfiguration {
         getLogger().debug("Logger is ready for using");
     }
 
-    @BeforeTest()
-    public HomePage login() {
-        while (true) {
-            try {
-                homePage = open(Configuration.baseUrl, HomePage.class);
-                break;
-            } catch (Exception e) {
-                getLogger().debug("non success login");
-                if (++count == maxTries) throw e;
-            }
-        }
-
-        getLogger().debug("Home page opened");
-        return homePage;
-    }
-
     @AfterTest
     public void closeBrowser() {
         closeWebDriver();

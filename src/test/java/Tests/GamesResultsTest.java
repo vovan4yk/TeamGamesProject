@@ -14,20 +14,10 @@ import java.util.List;
 public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
-        List<GameBattle> gameBattleList = homePage.selectItLeague()
-                .openCalendar()
-               .openStage(AvailableStage.valueFromSting(System.getProperty("stages",System.getProperty("defaultStage"))))//add configuration file with param
-                .openGames(AvailableGames.valueFromSting(System.getProperty("games",System.getProperty("defaultGames"))))
-                .getPlayedTable(45)
-                .getAllGames();
+        System.out.println(System.getProperty("browser",System.getProperty("defaultBrowser")));
+               System.out.println(AvailableStage.valueFromSting(System.getProperty("stages",System.getProperty("defaultStage"))));//add configuration file with param
+        System.out.println(AvailableGames.valueFromSting(System.getProperty("games",System.getProperty("defaultGames"))));
 
-        List<TeamGame> teamGamesFromCalendar = new GameResultAnalyze()
-                .analyzeGame(gameBattleList);
-
-        List<TeamGame> teamGamesFromTable = homePage.openTable()
-                .getTableResult();
-
-        new Verification().verifyTableAreTheSame(teamGamesFromCalendar, teamGamesFromTable);
     }
 }
 

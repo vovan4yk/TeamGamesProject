@@ -11,12 +11,14 @@ import businessServices.GameResultAnalyze;
 
 import java.util.List;
 
+import static utils.Log.getLogger;
+
 public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
-        System.out.println(System.getProperty("browser",System.getProperty("defaultBrowser")));
-               System.out.println(AvailableStage.valueFromSting(System.getProperty("stages",System.getProperty("defaultStage"))));//add configuration file with param
-        System.out.println(AvailableGames.valueFromSting(System.getProperty("games",System.getProperty("defaultGames"))));
+        getLogger().debug(System.getProperty("browser",System.getProperty("defaultBrowser")));
+        getLogger().debug(AvailableStage.valueFromSting(System.getProperty("stages",System.getProperty("defaultStage"))));//add configuration file with param
+        getLogger().debug(AvailableGames.valueFromSting(System.getProperty("games",System.getProperty("defaultGames"))));
 
     }
 }

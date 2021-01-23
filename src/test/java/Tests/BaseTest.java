@@ -14,16 +14,27 @@ import static utils.Log.intLog;
 public class BaseTest extends BaseTestConfiguration {
 
     public static HomePage homePage;
+    public static int count = 0;
+    public static int maxTries = 10;
 
     @BeforeSuite()
     public void initLogger() {
         intLog();
         getLogger().debug("Logger is ready for using");
     }
- 
+
     @BeforeTest()
     public HomePage login() {
-        homePage = open(Configuration.baseUrl, HomePage.class);
+        while (true) {
+            try {
+                homePage = open(Configuration.baseUrl, HomePage.class);
+                break;
+            } catch (Exception e) {
+                getLogger().debug("non success login");
+                if (++count == maxTries) throw e;
+            }
+        }
+
         getLogger().debug("Home page opened");
         return homePage;
     }

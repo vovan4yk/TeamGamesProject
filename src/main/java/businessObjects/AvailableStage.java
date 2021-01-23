@@ -1,5 +1,7 @@
 package businessObjects;
 
+import java.util.Arrays;
+
 public enum AvailableStage {
 
     ALL_STAGES("All stages"),
@@ -14,5 +16,12 @@ public enum AvailableStage {
 
     public String getName() {
         return name;
+    }
+
+    public static AvailableStage valueFromSting(String stage) {
+        return Arrays.stream(values())
+                .filter(value -> value.getName().equals(stage))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Not found value with name " + stage));
     }
 }

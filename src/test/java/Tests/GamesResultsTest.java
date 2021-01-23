@@ -14,12 +14,10 @@ import java.util.List;
 public class GamesResultsTest extends BaseTest {
     @Test()
     public void myTest() {
-//        System.out.println("test");
-//        SoftAssertions.assertSoftly(softAssertions -> softAssertions.assertThat("true").isEqualTo(true));
         List<GameBattle> gameBattleList = homePage.selectItLeague()
                 .openCalendar()
-                .openStage(AvailableStage.GROUP_STAGE)
-                .openGames(AvailableGames.PLAYED)
+               .openStage(AvailableStage.valueFromSting(System.getProperty("stages",System.getProperty("defaultStage"))))//add configuration file with param
+                .openGames(AvailableGames.valueFromSting(System.getProperty("games",System.getProperty("defaultGames"))))
                 .getPlayedTable(45)
                 .getAllGames();
 

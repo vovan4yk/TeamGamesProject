@@ -15,7 +15,7 @@ public class BaseTest extends BaseTestConfiguration {
 
     public static HomePage homePage;
     public static int count = 0;
-    public static int maxTries = 10;
+    public static final int MAX_TRIES = 10;
 
     @BeforeSuite()
     public void initLogger() {
@@ -30,8 +30,8 @@ public class BaseTest extends BaseTestConfiguration {
                 homePage = open(Configuration.baseUrl, HomePage.class);
                 break;
             } catch (Exception e) {
-                getLogger().debug("non success login");
-                if (++count == maxTries) throw e;
+                getLogger().debug(String.format("Home page wasn't opened successfully, %d - tries to open", count));
+                if (++count == MAX_TRIES) throw e;
             }
         }
 

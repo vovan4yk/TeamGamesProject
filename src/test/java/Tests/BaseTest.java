@@ -37,7 +37,7 @@ public class BaseTest extends BaseTestConfiguration {
 
         getLogger().debug("Home page opened");
         return homePage;
-    }// 
+    }
 
     @AfterTest
     public void closeBrowser() {

@@ -55,7 +55,5 @@ public class BaseTest extends BaseTestConfiguration {
         getLogger().debug( context.getFailedTests());
         getLogger().debug( context.getPassedTests());
         getLogger().debug( context.getSkippedTests());
-        getLogger().debug( context.getPassedTests().getAllMethods());
-        getLogger().debug( context.getPassedTests().getAllMethods());
     }
 }

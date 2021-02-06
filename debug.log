@@ -40,3 +40,10 @@
 [1104/210309.154:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1104/220941.659:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1105/164555.910:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0104/172830.438:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0104/172830.439:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0105/013320.263:ERROR:file_io_win.cc(162)] CreateFile C:\Users\V3A35~1.POT\AppData\Local\Temp\scoped_dir18416_493766760\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0105/013320.268:ERROR:file_io_win.cc(171)] CreateFile C:\Users\V3A35~1.POT\AppData\Local\Temp\scoped_dir18416_493766760\Crashpad\reports\aa68a953-1d15-4b93-8e7a-e1a6bd3d4896.dmp: The system cannot find the path specified. (0x3)
+[0105/013320.269:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[0116/162102.870:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0117/162442.263:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

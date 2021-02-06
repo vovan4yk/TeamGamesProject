@@ -1,6 +1,8 @@
 package Tests;
 
 import com.codeborne.selenide.Configuration;
+import org.testng.ITestContext;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -15,7 +17,7 @@ public class BaseTest extends BaseTestConfiguration {
 
     public static HomePage homePage;
     public static int count = 0;
-    public static final int MAX_TRIES = 10;
+    public static final int MAX_TRIES = 3;
 
     @BeforeSuite()
     public void initLogger() {
@@ -25,10 +27,12 @@ public class BaseTest extends BaseTestConfiguration {
 
     @BeforeTest()
     public HomePage login() {
-        while (true) {
+        //TODO: clarify exactly exception, null or something else
+        boolean opened = false;
+        while (!opened) {
             try {
                 homePage = open(Configuration.baseUrl, HomePage.class);
-                break;
+                opened = true;
             } catch (Exception e) {
                 getLogger().debug(String.format("Home page wasn't opened successfully, %d - tries to open", count));
                 if (++count == MAX_TRIES) throw e;
@@ -42,5 +46,16 @@ public class BaseTest extends BaseTestConfiguration {
     @AfterTest
     public void closeBrowser() {
         closeWebDriver();
+    }
+
+    @AfterSuite()
+    public void readAfterTest(ITestContext context){
+       getLogger().debug( context.getStartDate());
+        getLogger().debug( context.getEndDate());
+        getLogger().debug( context.getFailedTests());
+        getLogger().debug( context.getPassedTests());
+        getLogger().debug( context.getSkippedTests());
+        getLogger().debug( context.getPassedTests().getAllMethods());
+        getLogger().debug( context.getPassedTests().getAllMethods());
     }
 }

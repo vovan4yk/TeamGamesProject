@@ -1,0 +1,13 @@
+businessObjects\GameResultValues.class
+businessObjects\AvailableGames.class
+businessObjects\Verification.class
+businessServices\GameResultAnalyze.class
+pageObjects\HomePage.class
+pageObjects\GameBattle.class
+pageObjects\MainMenu.class
+businessObjects\TeamGame.class
+utils\Log.class
+businessObjects\AvailableStage.class
+pageObjects\Calendar.class
+pageObjects\PlayedTable.class
+pageObjects\FinalResultTable.class

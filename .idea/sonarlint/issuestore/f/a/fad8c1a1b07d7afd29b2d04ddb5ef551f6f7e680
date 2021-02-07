@@ -1,0 +1,9 @@
+
+†
+java:S4165"dRemove this useless assignment; "logger" already holds the assigned value along all execution paths.(Ρ†ο™όÿÿÿÿ8ƒÿ§Ϋπ.
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ι¥ωφ8¤›άπ.
+P
+java:S1121".Extract the assignment out of this expression.(Ρ†ο™όÿÿÿÿ8…ε¬»ξ.
+Q
+java:S1656"/Remove or correct this useless self-assignment.(Ρ†ο™όÿÿÿÿ8ƒÿ§Ϋπ.

@@ -62,7 +62,7 @@ public class BaseTest extends BaseTestConfiguration {
                 ZoneId.systemDefault()).toLocalTime();
         LocalTime endTime = LocalDateTime.ofInstant(endDate.toInstant(),
                 ZoneId.systemDefault()).toLocalTime();
-
+ 
         getLogger().debug("Test started at : " + startDate);
         getLogger().debug("Test finished at : " + endDate);
         getLogger().debug(String.format("Total test run duration : %d seconds", Duration.between(startTime, endTime).getSeconds()));

@@ -1,11 +1,0 @@
-
-s	java:S116"YRename this field "PlayedDropDown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä‡Åøÿÿÿÿ
-C
-java:S1185+"(Remove this method to simply inherit it.(ªúîãúÿÿÿÿ
-e	java:S116"PRename this field "GAMES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ıõî
-7
-java:S1170"!Make this final field static too.(›ıõî
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÉÙ÷T
-7
-java:S1170"!Make this final field static too.(å——ı
-e	java:S116"PRename this field "STAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å——ı

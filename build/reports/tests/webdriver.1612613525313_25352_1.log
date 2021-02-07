@@ -1,8 +1,0 @@
-1612613525557	geckodriver	INFO	Listening on 127.0.0.1:2827
-1612613526477	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\V3A35~1.POT\\AppData\\Local\\Temp\\rust_mozprofilegEu4se"
-Can't find symbol 'eglSwapBuffersWithDamageEXT'.
-Can't find symbol 'eglSetDamageRegionKHR'.
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1612613529998	Marionette	INFO	Listening on port 52178
-1612613530231	Marionette	WARN	TLS certificate errors will be ignored for this session
-1612613735241	Marionette	INFO	Stopped listening on port 52178

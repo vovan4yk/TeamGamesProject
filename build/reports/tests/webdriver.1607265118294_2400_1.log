@@ -1,9 +1,0 @@
-Starting MSEdgeDriver 87.0.664.55 (097391c0e48fdc4ded0e5c4367f7055dc71815ed) on port 10497
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-MSEdgeDriver was started successfully.
-[1607265154.285][SEVERE]: Timed out receiving message from renderer: 0.652
-[1607265154.286][SEVERE]: Timed out receiving message from renderer: 0.652
-[1607265184.390][SEVERE]: Timed out receiving message from renderer: 30.000
-[1607265184.390][SEVERE]: Timed out receiving message from renderer: -0.014
-[1607265184.394][SEVERE]: Timed out receiving message from renderer: -0.014

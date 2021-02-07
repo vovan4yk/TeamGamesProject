@@ -19,7 +19,7 @@ public class GamesResultsTest extends BaseTest {
     public void myTest(AvailableStage stage, AvailableGames game) {
         List<GameBattle> gameBattleList = homePage.selectItLeague()
                 .openCalendar()
-                .openStage(stage)//add configuration file with param
+                .openStage(stage)
                 .openGames(game)
                 .getPlayedTable(45)
                 .getAllGames();

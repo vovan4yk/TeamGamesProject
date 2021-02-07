@@ -1,0 +1,231 @@
+[1611431737.308][INFO]: Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 8366
+[1611431737.308][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1611431738.187][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1611431735890_23224_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1611431735890_23224_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1611431738.193][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\v.potemskyi\\Desktop\\TeamGamesProject\\build\\downloads\\1611431735890_23224_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1611431738.194][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1611431738.196][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\V3A35~1.POT\AppData\Local\Temp\scoped_dir18948_69573065" data:,
+[1611431738.894][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1611431740.954][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1611431742.991][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.141",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761})",
+         "userDataDir": "C:\\Users\\V3A35~1.POT\\AppData\\Local\\Temp\\scoped_dir18948_69573065"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:63942"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "6e2bfb282f6478d13032441c00e1bccb"
+}
+[1611431743.078][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND SetWindowRect {
+   "height": 970,
+   "width": 1920
+}
+[1611431743.078][INFO]: Waiting for pending navigations...
+[1611431743.080][INFO]: Done waiting for pending navigations. Status: ok
+[1611431743.189][INFO]: Waiting for pending navigations...
+[1611431743.189][INFO]: Done waiting for pending navigations. Status: ok
+[1611431743.190][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE SetWindowRect {
+   "height": 970,
+   "width": 1920,
+   "x": 10,
+   "y": 10
+}
+[1611431743.205][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1611431743.205][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE SetTimeouts
+[1611431743.221][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND Navigate {
+   "url": "http://www.it-league.lviv.ua"
+}
+[1611431743.221][INFO]: Waiting for pending navigations...
+[1611431743.221][INFO]: Done waiting for pending navigations. Status: ok
+[1611431764.349][INFO]: Waiting for pending navigations...
+[1611431764.434][INFO]: Done waiting for pending navigations. Status: ok
+[1611431764.587][INFO]: Waiting for pending navigations...
+[1611431764.599][INFO]: Done waiting for pending navigations. Status: ok
+[1611431773.228][SEVERE]: Timed out receiving message from renderer: 30.000
+[1611431773.228][INFO]: Waiting for pending navigations...
+[1611431773.229][SEVERE]: Timed out receiving message from renderer: -0.008
+[1611431773.229][INFO]: Timed out. Stopping navigation...
+[1611431773.232][SEVERE]: Timed out receiving message from renderer: -0.008
+[1611431773.232][INFO]: Done waiting for pending navigations. Status: timeout: Timed out receiving message from renderer: -0.008
+[1611431773.232][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE Navigate ERROR timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=87.0.4280.141)
+[1611431773.250][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND GetTitle {
+
+}
+[1611431773.250][INFO]: Waiting for pending navigations...
+[1611431773.251][INFO]: Done waiting for pending navigations. Status: ok
+[1611431773.256][INFO]: Waiting for pending navigations...
+[1611431773.257][INFO]: Done waiting for pending navigations. Status: ok
+[1611431773.257][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE GetTitle "www.it-league.lviv.ua"
+[1611431773.276][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND Navigate {
+   "url": "http://www.it-league.lviv.ua"
+}
+[1611431773.276][INFO]: Waiting for pending navigations...
+[1611431773.277][INFO]: Done waiting for pending navigations. Status: ok
+[1611431785.520][INFO]: Waiting for pending navigations...
+[1611431785.530][INFO]: Done waiting for pending navigations. Status: ok
+[1611431785.671][INFO]: Waiting for pending navigations...
+[1611431785.679][INFO]: Done waiting for pending navigations. Status: ok
+[1611431803.283][SEVERE]: Timed out receiving message from renderer: 30.000
+[1611431803.283][INFO]: Waiting for pending navigations...
+[1611431803.283][SEVERE]: Timed out receiving message from renderer: -0.007
+[1611431803.283][INFO]: Timed out. Stopping navigation...
+[1611431803.287][SEVERE]: Timed out receiving message from renderer: -0.007
+[1611431803.287][INFO]: Done waiting for pending navigations. Status: timeout: Timed out receiving message from renderer: -0.007
+[1611431803.287][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE Navigate ERROR timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=87.0.4280.141)
+[1611431803.291][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND GetTitle {
+
+}
+[1611431803.292][INFO]: Waiting for pending navigations...
+[1611431803.293][INFO]: Done waiting for pending navigations. Status: ok
+[1611431803.296][INFO]: Waiting for pending navigations...
+[1611431803.297][INFO]: Done waiting for pending navigations. Status: ok
+[1611431803.297][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE GetTitle "www.it-league.lviv.ua"
+[1611431803.314][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND Navigate {
+   "url": "http://www.it-league.lviv.ua"
+}
+[1611431803.314][INFO]: Waiting for pending navigations...
+[1611431803.315][INFO]: Done waiting for pending navigations. Status: ok
+[1611431806.599][INFO]: Waiting for pending navigations...
+[1611431806.607][INFO]: Done waiting for pending navigations. Status: ok
+[1611431806.753][INFO]: Waiting for pending navigations...
+[1611431806.762][INFO]: Done waiting for pending navigations. Status: ok
+[1611431824.381][INFO]: Waiting for pending navigations...
+[1611431824.388][INFO]: Done waiting for pending navigations. Status: ok
+[1611431824.388][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE Navigate ERROR unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=87.0.4280.141)
+[1611431824.451][INFO]: [6e2bfb282f6478d13032441c00e1bccb] COMMAND Quit {
+
+}
+[1611431824.546][INFO]: [6e2bfb282f6478d13032441c00e1bccb] RESPONSE Quit

@@ -2,7 +2,6 @@ package Tests;
 
 import businessObjects.TeamGame;
 import businessObjects.Verification;
-import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import businessObjects.AvailableGames;
